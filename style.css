@@ -13,6 +13,7 @@ body {
   background-size: contain;
   background-color: hsl(225, 100%, 94%);
   position: relative;
+  font-size: 16px;
 }
 .container {
   position: absolute;
@@ -35,4 +36,56 @@ body {
   font-weight: 900;
   font-size: 28px;
   margin-bottom: 17px;
+}
+.center-part p.subtitle {
+  color: rgba(113, 127, 166, 1);
+  margin-bottom: 20px;
+}
+.middle-box {
+  background-color: rgba(247, 249, 255, 1);
+  border-radius: 11px;
+  display: flex;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+}
+.left-side div {
+  margin-left: 24px;
+}
+.left-side div h5 {
+  font-weight: 900;
+  font-size: 16px;
+  color: hsl(223, 47%, 23%);
+}
+.left-side div p {
+  font-weight: 900;
+  font-size: 16px;
+  color: rgba(113, 127, 166, 1);
+}
+.middle-box a {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+a.proceed {
+  display: block;
+  /* to remove line */
+  text-decoration: none;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  padding: 25px 0;
+  border-radius: 11px;
+  margin: 32px 0;
+}
+a.cancel {
+  color: rgba(113, 127, 166, 1);
+  text-decoration: none;
+  font-weight: 500;
 }
