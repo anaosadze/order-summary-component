@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
+/*******************************************************/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/*******************************************************/
 body {
   font-family: "Red Hat Display", sans-serif;
   min-height: 100vh;
@@ -15,6 +17,8 @@ body {
   position: relative;
   font-size: 16px;
 }
+/*******************************************************/
+
 .container {
   position: absolute;
   left: 50%;
@@ -25,7 +29,9 @@ body {
   border-radius: 20px;
   /* ho have radius top image part as well */
   overflow: hidden;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.1518);
 }
+/*******************************************************/
 
 .center-part {
   padding: 7%;
@@ -41,6 +47,8 @@ body {
   color: rgba(113, 127, 166, 1);
   margin-bottom: 20px;
 }
+/*******************************************************/
+
 .middle-box {
   background-color: rgba(247, 249, 255, 1);
   border-radius: 11px;
@@ -50,12 +58,21 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+/* using pseudo class */
+.middle-box a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+  transition: ;
+}
+/*******************************************************/
 
 .left-side {
   display: flex;
   align-items: center;
-
   text-align: left;
+}
+.left-side a {
+  font-size: 14px;
 }
 .left-side div {
   margin-left: 24px;
@@ -70,10 +87,13 @@ body {
   font-size: 16px;
   color: rgba(113, 127, 166, 1);
 }
+/*******************************************************/
+
 .middle-box a {
   font-weight: 900;
   color: hsl(223, 47%, 23%);
 }
+
 a.proceed {
   display: block;
   /* to remove line */
@@ -83,9 +103,28 @@ a.proceed {
   padding: 25px 0;
   border-radius: 11px;
   margin: 32px 0;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.1903);
 }
+a.proceed:hover {
+  background-color: rgba(113, 127, 166, 1);
+}
+/*******************************************************/
+
 a.cancel {
   color: rgba(113, 127, 166, 1);
   text-decoration: none;
   font-weight: 500;
 }
+a.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+/*******************************************************/
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+/*******************************************************/
