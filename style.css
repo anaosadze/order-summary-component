@@ -12,4 +12,27 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  /* ho have radius top image part as well */
+  overflow: hidden;
+}
+
+.center-part {
+  padding: 7%;
+  text-align: center;
+}
+.title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 17px;
 }
